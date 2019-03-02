@@ -8,7 +8,7 @@
 ////session_destroy();
 
 
-session_start();
+/*session_start();
 
 $_SESSION['color']  = 'verde';
 $_SESSION['animal'] = 'gato';
@@ -17,7 +17,7 @@ $_SESSION['animal'] = 'gato';
 
 $cookie_name = "user";
 $cookie_value = "John Doe";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day*/
 
 ?>
 
@@ -316,7 +316,7 @@ for (var attr in meta) {
 
     
       <li class="site-nav--active">
-        <a href=" inicio.php" class="site-nav__link site-nav__link--main site-nav__link--active" aria-current="page">
+        <a href=" index.php" class="site-nav__link site-nav__link--main site-nav__link--active" aria-current="page">
           <span class="site-nav__label">Inicio</span>
         </a>
       </li>
@@ -327,7 +327,7 @@ for (var attr in meta) {
 
     
       <li>
-        <a href=" inicio.php" class="site-nav__link site-nav__link--main">
+        <a href=" index.php" class="site-nav__link site-nav__link--main">
           <span class="site-nav__label">Catálogo</span>
         </a>
       </li>
