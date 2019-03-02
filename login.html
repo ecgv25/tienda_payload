@@ -1,0 +1,329 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap_portal.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/estructura_internas.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/sub-menu.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+<style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+  font-weight: bold;
+  padding: 8px 15px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+
+.notifyjs-bootstrap-warn {
+  color: #C09853;
+  background-color: #FCF8E3;
+  border-color: #FBEED5;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style>
+
+<title>SAIME - Pasaporte</title>
+                                                                           <!--//     ***** JavasCript *****-->
+                                                                                                                          <!--Interviene con el Popup  -->
+        <!--Movimiento del Popup -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-39555876-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-39555876-4');
+</script>
+
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+    <style type="text/css" id="core-notify">.notifyjs-corner {
+  position: fixed;
+  margin: 5px;
+  z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: inherit;
+  margin: 3px;
+}
+
+.notifyjs-wrapper {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.notifyjs-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+  position: relative;
+}
+
+.notifyjs-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}</style></head>
+    <body style="overflow: visible;">
+        <div id="loader" style="display: none;">
+    <div class="loader-container">
+        <h3 class="loader-back-text"><img src="#" alt="" class="loader"></h3>
+    </div>
+</div>        <div id="body">
+        
+                                    <!--Encabezado de la plantilla-->
+            <!--Buscador-->
+
+            <!--Imagen encabezado-->
+            <div class="topbar">		
+                <div class="container">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="imagenes/gobierno.png" width="auto" height="100%">
+                    </div>
+                </div>
+            </div>
+            <!--MENU-->
+            <div id="">
+                                    <header class="header affix-top">
+    <div class="container2">
+
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container2">
+               <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"> <span class="bars"> 
+                                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </span> <span class="btn-text">Menu</span> 
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+
+                        <ul id="yw0" class="nav"><li><img src="imagenes/enlaces/mpprijp.png" width="80"></li><li class="menu_inicio"><a href="login.html">Inicio</a></li><li class="menu_sesion active"><a href="login.html">Iniciar Sesión</a></li><li class="menu_regitros"><a href="login.html">Registro de Usuario</a></li><li class="menu_certificado"><a href="login.html">Verificar Certificado</a></li><li><img src="imagenes/logo_saime.png"></li></ul>                    </div>
+                </div>
+            </nav>
+      
+    </div>
+</header>
+                                                <!--Cuerpo-->
+                <style>
+    .mensajes {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #31708f;
+        text-align: center
+
+    }    
+
+</style>
+
+
+<div id="est_variable">
+    <div id="envuelto">
+         
+<section id="page-header" class="section background customheader">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end section -->
+<section class="customblogsection section section-grey makenopaddingtop">
+    <div class="container">
+        <div id="post-wrapper" class="row">
+            <div id="content" class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <div id="grid" class="row">
+                    <div class="box col-md-12 col-sm-12 clearfix">
+                        <div class="box-desc">
+                            
+                            <div class="blog-meta center-block">
+                                <!--<div class="blog-description">-->
+                                <div id="cond-terms" style="display:block;text-align: justify">
+
+<div class="" style="padding-left: 15%; padding-right: 15%;margin-top: 5%">
+    <div class="form-group">
+        <center><img src="imagenes/logo_saime.png" class="img-responsive" alt="SAIME"></center><br>
+        <center><h5>Autenticación de Usuario</h5></center>
+        <center><small>Para ingresar debe usar el usuario y clave del portal pasaporte.</small></center>
+        <form id="login-form" action="/index.php?r=site/login" method="post">                <br>
+       
+        <div class="form-group col-lg-12">
+                        <input autocomplete="off" class="form-control" placeholder="Dirección de Correo" maxlength="50" name="LoginForm[username]" id="LoginForm_username" type="text">        </div>
+        
+        <div class="form-group col-lg-12">
+                        <input class="form-control" placeholder="Clave o Contraseña" maxlength="12" name="LoginForm[password]" id="LoginForm_password" type="password">        </div>
+	        <input value="8530d733850fc43a5e8911a9cf598670" name="LoginForm[tokenCSRF]" id="LoginForm_tokenCSRF" type="hidden">
+        
+
+        <div class="form-group col-lg-12">
+                <a href="pago_curl.html" class="btn btn-primary btn-block btn-lg" id="login_button" type="submit" name="yt0">Ingresar</a>
+                  </div>
+        <br><br>
+        <div class="form-group col-lg-12">
+            <a href="/index.php?r=usuario/usuario/rememberPass">¿Olvidó su contraseña?</a>        </div>
+        <br><br>
+        </form>
+    </div>
+</div>
+                                                                </div><!-- end bottom -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end content -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div></section><!-- end section -->
+
+
+    </div>
+</div>
+        
+                <!--Redes sociales-->
+                                <br><br>
+                <br><br>
+                <br><br>
+<section class="section fullscreen background parallax" style="background-image:url('css/parallax_02.jpg');" data-img-width="1920" data-img-height="930" data-diff="0">
+    <div class="container">
+        <div class="row contactdetails">
+            <!--
+             <div class="col-md-8 col-sm-8 col-xs-12 leftside wow fadeIn" >
+                 <h2> <img src="/themes/saime/imagenes/seadoi.png" class=""> <br>Entrega de pasaporte a domicilio <small style="color:#303030;"><br>Horario: Lunes a Viernes de 8 a.m a 4 p.m </small></h2>
+ 
+                 <a href="http://seadoi.com/seadoi3/principal/html/home.html" class="btn btn-primary  btn-lg">Continuar</a>
+ 
+             </div><!-- end col -->
+            <center>
+                <div class="col-md-12 col-sm-4 col-xs-12 wow fadeIn" style="visibility: hidden; animation-name: none;">
+                    <h3><i class="fa fa-phone-square"></i> Callcenter:</h3>
+                    <h3>(0800)-SAIME-00<br>
+                        <span style="font-size:25px;">(0800)-72463-00</span><small class="hidden-xs" style="color:#303030;"> <br>Lunes a Viernes de 7 a.m a 7 p.m </small></h3>
+                    <div>
+                        <style>
+                            .redess{
+                                width: 100%;
+                                padding-bottom:100px;
+                            }
+                        </style>
+                        <div class="redess block">
+                            <a target="_blank" href="https://twitter.com/RedsocialSAIME"><i style="font-size: 2.5em;margin-left:20px;" class="fa fa-twitter-square"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=L3Muzk4Iayg&amp;list=PLpTiR8-YvbBUksltOKFHBDovx2fo1rQzC"><i style="font-size: 2.5em; margin-left:20px;" class="fa fa-youtube-square"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/redsocialsaime/"><i style="font-size: 2.5em; margin-left:20px;" class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Red-Social-Saime-441726062515605"> <i style="font-size: 2.5em;margin-left:20px;" class="fa fa-facebook-square"></i></a>
+                            <a target="_blank" href="http://portalnuevo.lab.saime.gob.ve/site/rss "><i style="font-size: 2.5em; margin-left:20px;" class="fa fa-rss-square"></i></a>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </center>
+        </div><!-- end welcome -->
+    </div><!-- end container -->
+</section>
+
+
+<footer class="footer">
+    <div id="newsletter" class="container">
+        <div class="newsletterform">
+            <div class="table-responsive tabla2"> 
+                <div id="scroller_container1" style="position: relative; overflow: hidden;"> 
+                    <div style="font-size: 60px; line-height: 60px; white-space: nowrap; margin: 0px; position: absolute; top: 0px; left: -5px; height: 130px;" class="jscroller2_left jscroller2_speed-50 jscroller2_alternate jscroller2_mousemove jscroller2_dynamic">
+                        <a href="http://www.mpprij.gob.ve/" target="_blank"><img src="imagenes/enlaces/mpprijp.png" width="96" height="120"></a>
+                        <a href="http://www.cnc.gob.ve/" target="_blank"><img src="imagenes/enlaces/cnc.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/digeservisp.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/dpd.png" width="96" height="120"></a>
+                        <a href="http://www.fona.gob.ve/" target="_blank"><img src="imagenes/enlaces/fona.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/fonbe.png" width="96" height="120"></a>
+                        <a href="http://www.intt.gob.ve/intt/" target="_blank"><img src="imagenes/enlaces/intt.png" width="96" height="120"></a>           
+                        <a href="http://www.ona.gob.ve/" target="_blank"><img src="imagenes/enlaces/ona.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/oncdoft.png" width="96" height="120"></a>
+                      
+                    </div>
+                </div>
+            </div>         
+        </div> 
+    </div>
+    <div class="container text-center"> 
+        <div class="menu">
+            <a href="/">Inicio</a>|
+            <a href="/institucion/mision">¿Qué es el SAIME?</a>|
+            <a href="/noticia">Noticias</a>|
+            <!--<a href="#">Proyectos</a>-->
+            <!--|-->
+            <!--<a href="#">Mapa del Sitio</a>
+            |
+            <a href="#">Preguntas Frecuentes</a>
+            -->
+            <a href="/oficina/fijas">Oficinas</a>|
+            <a href="/institucion/contacto">Contactanos</a>
+        </div>
+        <div class=" copymessage">
+            <span>Desarrollado por: Coordinación de Sistemas - © 2016 Todos los Derechos Reservados.</span><br>
+            <span>Servicio Administrativo de Identificación, Migración y Extranjería -Rif G-20008889-3</span><br>
+            <span>Ministerio del Poder Popular para Relaciones Interiores, Justicia y Paz</span><br>
+            <span>Avenida Baralt, Edificio 1000. Sede SAIME. Planta Baja, Caracas.</span><br>
+
+        </div>
+    </div><!-- end container -->
+</footer>            </div>
+        </div>
+    <script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('[data-toggle=popover]').popover();
+jQuery('body').tooltip({"selector":"[data-toggle=tooltip]"});
+});
+/*]]>*/
+</script>
+
+
+
+<!--<script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal2').modal('show');
+    });
+</script>
+ Modal ventana emergente
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+</body></html>

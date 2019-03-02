@@ -1,0 +1,387 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/assets/fa4b47c8/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/fa4b47c8/css/bootstrap-yii.css">
+<link rel="stylesheet" type="text/css" href="/assets/fa4b47c8/css/jquery-ui-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap_portal.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/estructura_internas.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/sub-menu.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/assets/e5116c7f/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/e5116c7f/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/assets/fa4b47c8/js/jqui-tb-noconflict.js"></script>
+<script type="text/javascript" src="/assets/fa4b47c8/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/fa4b47c8/bootbox/bootbox.min.js"></script>
+<script type="text/javascript" src="/assets/fa4b47c8/notify/notify.min.js"></script><style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+  font-weight: bold;
+  padding: 8px 15px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+  color: #C09853;
+  background-color: #FCF8E3;
+  border-color: #FBEED5;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ui-block.js"></script>
+<script type="text/javascript" src="/themes/saime/js/jquery.ui.js"></script>
+<script type="text/javascript" src="/themes/saime/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/themes/saime/js/wow.js"></script>
+<script type="text/javascript" src="/themes/saime/js/jscroller2-1.61.js"></script>
+<script type="text/javascript" src="/themes/saime/js/jquery.crotator.js"></script>
+<script type="text/javascript" src="/themes/saime/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/themes/saime/js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="/themes/saime/js/jquery.bpopup.min.js"></script>
+<title>SAIME - Pasaporte</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="PASAPORTE">
+        <meta name="author" content="SAIME">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="/themes/saime/imagenes/favicon.ico">
+        <link rel="apple-touch-icon" href="/themes/saime/imagenes/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/themes/saime/imagenes/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/themes/saime/imagenes/apple-touch-icon-114x114.png">
+        <!--<script type="text/javascript" src="https://js.authorize.net/v1/Accept.js" charset="utf-8"></script>-->
+        
+                                                                                                <!--//     ***** JavasCript *****-->
+                                                                                                                          <!--Interviene con el Popup  -->
+        <!--Movimiento del Popup -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-39555876-4"></script>
+
+
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+    <style type="text/css" id="core-notify">.notifyjs-corner {
+  position: fixed;
+  margin: 5px;
+  z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: inherit;
+  margin: 3px;
+}
+
+.notifyjs-wrapper {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.notifyjs-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+  position: relative;
+}
+
+.notifyjs-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}</style></head>
+    <body style="overflow: visible;">
+        <div id="loader" style="display: none;">
+    <div class="loader-container">
+        <h3 class="loader-back-text"><img src="/themes/saime/imagenes/loader.gif" alt="" class="loader"></h3>
+    </div>
+</div>        <div id="body">
+        
+                                    <!--Encabezado de la plantilla-->
+            <!--Buscador-->
+
+            <!--Imagen encabezado-->
+            <div class="topbar">		
+                <div class="container">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="imagenes/gobierno.png" width="auto" height="100%">
+                    </div>
+                </div>
+            </div>
+            <!--MENU-->
+            <div id="">
+                                    <header class="header affix-top">
+    <div class="container2">
+
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container2">
+               <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"> <span class="bars"> 
+                                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </span> <span class="btn-text">Menu</span> 
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+
+                        <ul id="yw0" class="nav"><li><img src="imagenes/enlaces/mpprijp.png" width="80"></li><li class="menu_inicio"><a href="index.html">Inicio</a></li><li class="menu_sesion active"><a href="index.html">Pasaporte</a></li><li class="menu_certificado"><a href="index.html">Datos Filiatorios</a></li><li class="menu_certificado"><a href="index.html">Usuario</a></li><li class="menu_certificado"><a href="index.html">Salir</a></li><li><img src="imagenes/logo_saime.png"></li></ul>                    </div>
+                </div>
+            </nav>
+      
+    </div>
+</header>
+                                                <!--Cuerpo-->
+                <style>
+    .mensajes {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #31708f;
+        text-align: center
+
+    }    
+
+</style>
+
+
+<div id="est_variable">
+    <div id="envuelto">
+         
+<section id="page-header" class="section background customheader">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end section -->
+<section class="customblogsection section section-grey makenopaddingtop">
+    <div class="container">
+        <div id="post-wrapper" class="row">
+            <div id="content" class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <div id="grid" class="row">
+                    <div class="box col-md-12 col-sm-12 clearfix">
+                        <div class="box-desc">
+                                <div class="blog-meta center-block">
+                                        <div style="text-align: center;">
+                                            <br><br>
+                                            <h5> </h5>
+                                            <br>
+                                            <div id="cond-terms" style="display:block">
+                                                <p class="text-justify"> A continuación usted podra realizar la obtención de porroga del pasaporte electrónico en el territorio nacional (Venezuela) en cualquier momento del día, una vez que se haya hecho el pago se le notificara por mensaje de texto  o correo electrónico de su transacción y su etiqueta de prorroga será enviada a la oficina seleccionada al inciar el trámite.</p>
+                                                <p><div class="amarillo">Requisitos Obligatorios para la obtención de pasaporte electrónico en Venezuela</div></p>
+                                                <p class="text-justify"> - La libreta del pasaporte debe ser electronica (Chip integrado).</p>
+                                                <p class="text-justify"> - La libreta del ciudadano debe poseer al menos 4 páginas disponibles y debe estar en buen estado. </p>
+                                                <p class="text-justify"> - Debe encontrarse en el territorio nacional. </p>
+                                                <p class="text-justify"> - Puede seleccionar la oficina de su preferencia.</p>
+                                                <p class="text-justify"> - Debe seleccionar el pasaporte electrónico que cumpla con las condiciones para  realizar el trámite de prorroga.</p>
+                                                <p class="text-justify"> - Luego de realizar el pago de forma efectiva, debe esperar un correo  y/o mensaje de texto para que lleve su pasaporte y le sea estampada la prorroga del mismo. </p>
+                                               <br>
+                                                <h5>Pasaporte Electrónico Tramitado con Opción a Prorroga  2018</h5>
+
+                                                
+                                                <table class="table">
+                                                  <tr>  
+                                                      <td>Cedula</td> 
+                                                      <td>Nombre Completo</td> 
+                                                      <td>Fecha Nacimiento</td> 
+                                                      <td>Numero de Pasaporte</td> 
+                                                      <td>Oficina(ultimo tramite)</td>  
+                                                      <td colspan='3'>Opciones de Pago</td>   
+                                                   </tr>    
+                                                   <tr>  
+                                                        <td>25.090.345</td> 
+                                                        <td>Pedro Perez</td> 
+                                                        <td>25-01-1990</td> 
+                                                        <td>4534522</td> 
+                                                        <td>Principal</td> 
+                                                        <td> <img class="img-responsive" src="imagenes/bs.png" width="30px" height="30px"></td>    
+                                                        <td> 
+                                                            <a href="call_payload.php" id="go-to-petro-payload"> 
+                                                                <img title="Petro Pago" class="img-responsive" src="imagenes/petro.png"  width="100px" height="60px"> 
+                                                               
+                                                            </a>
+                                                        </td>  
+                                                        <td> 
+                                                            <!--a> href="call_payload_petro_pago.php" id="go-to-petro-payload"> 
+                                                               
+                                                                <img title="Pago por la Pasarela" class="img-responsive" src="imagenes/petro.png"  width="100px" height="60px"> 
+                                                            </a-->
+                                                        </td>     
+
+                                                    </tr>  
+                                                </table>
+                                            </div>
+                                        </div>
+                             </div>
+                    
+                    
+                </div>
+            </div><!-- end content -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div></section><!-- end section -->
+
+
+    </div>
+</div>
+        
+                <!--Redes sociales-->
+                <br><br>
+                <br><br>
+                <br><br>
+<section class="section fullscreen background parallax" style="background-image:url('css/parallax_02.jpg');" data-img-width="1920" data-img-height="930" data-diff="0">
+    <div class="container">
+        <div class="row contactdetails">
+            <!--
+             <div class="col-md-8 col-sm-8 col-xs-12 leftside wow fadeIn" >
+                 <h2> <img src="/themes/saime/imagenes/seadoi.png" class=""> <br>Entrega de pasaporte a domicilio <small style="color:#303030;"><br>Horario: Lunes a Viernes de 8 a.m a 4 p.m </small></h2>
+ 
+                 <a href="http://seadoi.com/seadoi3/principal/html/home.html" class="btn btn-primary  btn-lg">Continuar</a>
+ 
+             </div><!-- end col -->
+            <center>
+                <div class="col-md-12 col-sm-4 col-xs-12 wow fadeIn" style="visibility: hidden; animation-name: none;">
+                    <h3><i class="fa fa-phone-square"></i> Callcenter:</h3>
+                    <h3>(0800)-SAIME-00<br>
+                        <span style="font-size:25px;">(0800)-72463-00</span><small class="hidden-xs" style="color:#303030;"> <br>Lunes a Viernes de 7 a.m a 7 p.m </small></h3>
+                    <div>
+                        <style>
+                            .redess{
+                                width: 100%;
+                                padding-bottom:100px;
+                            }
+                        </style>
+                        <div class="redess block">
+                            <a target="_blank" href="https://twitter.com/RedsocialSAIME"><i style="font-size: 2.5em;margin-left:20px;" class="fa fa-twitter-square"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=L3Muzk4Iayg&amp;list=PLpTiR8-YvbBUksltOKFHBDovx2fo1rQzC"><i style="font-size: 2.5em; margin-left:20px;" class="fa fa-youtube-square"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/redsocialsaime/"><i style="font-size: 2.5em; margin-left:20px;" class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Red-Social-Saime-441726062515605"> <i style="font-size: 2.5em;margin-left:20px;" class="fa fa-facebook-square"></i></a>
+                            <a target="_blank" href="http://portalnuevo.lab.saime.gob.ve/site/rss "><i style="font-size: 2.5em; margin-left:20px;" class="fa fa-rss-square"></i></a>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </center>
+        </div><!-- end welcome -->
+    </div><!-- end container -->
+</section>
+
+
+<footer class="footer">HOME - HTML Code Tutorials
+    <div id="newsletter" classHOME - HTML Code Tutorials="container">
+        <div class="newsletterHOME - HTML Code Tutorialsform">
+            <div class="table-HOME - HTML Code Tutorialsresponsive tabla2"> 
+                <div id="scroller_container1" style="position: relative; overflow: hidden;"> 
+                    <div style="font-size: 60px; line-height: 60px; white-space: nowrap; margin: 0px; position: absolute; top: 0px; left: -5px; height: 130px;" class="jscroller2_left jscroller2_speed-50 jscroller2_alternate jscroller2_mousemove jscroller2_dynamic">
+                        <a href="http://www.mpprij.gob.ve/" target="_blank"><img src="imagenes/enlaces/mpprijp.png" width="96" height="120"></a>
+                        <a href="http://www.cnc.gob.ve/" target="_blank"><img src="imagenes/enlaces/cnc.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/digeservisp.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/dpd.png" width="96" height="120"></a>
+                        <a href="http://www.fona.gob.ve/" target="_blank"><img src="imagenes/enlaces/fona.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/fonbe.png" width="96" height="120"></a>
+                        <a href="http://www.intt.gob.ve/intt/" target="_blank"><img src="imagenes/enlaces/intt.png" width="96" height="120"></a>           
+                        <a href="http://www.ona.gob.ve/" target="_blank"><img src="imagenes/enlaces/ona.png" width="96" height="120"></a>
+                        <a href="#" target="_blank"><img src="imagenes/enlaces/oncdoft.png" width="96" height="120"></a>
+                        <a href="http://www.ovs.gob.ve/" target="_blank"><img src="imagenes/enlaces/ovs.png" width="96" height="120"></a>
+                        <a href="http://www.saren.gob.ve/" target="_blank"><img src="imagenes/enlaces/saren.png" width="96" height="120"></a>
+                        <a href="http://www.snb.gob.ve/" target="_blank"><img src="imagenes/enlaces/snb.png" width="96" height="120"></a>
+                        <a hrHOME - HTML Code Tutorialsef="http://www.vgrpc.gob.ve/" target="_blank"><img src="/themes/saime/imagenes/enlaces/vgrpc.png" width="96" height="120"></a>
+                        <a href="http://www.pnb.gob.ve/" target="_blank"><img src="/themes/saime/imagenes/enlaces/pnb.png" width="96" height="120"></a>
+                        <a href="http://www.cicpc.gob.ve" target="_blank"><img src="/themes/saime/imagenes/enlaces/cicpc.png" width="96" height="120"></a>
+                        <a href="http://www.pcivil.gob.ve" target="_blank"><img src="/themes/saime/imagenes/enlaces/proteccion.png" width="96" height="120"></a>
+                        <a href="http://www.consejo.gob.ve" target="_blank"><img src="/themes/saime/imagenes/enlaces/consejo.png" width="96" height="120"></a>
+                        <a href="http://www.unes.edu.ve" target="_blank"><img src="/themes/saime/imagenes/enlaces/unes.png" width="96" height="120"></a>
+                        <a href="http://www.venezuela.edu.ve" target="_blank"><img src="/themes/saime/imagenes/enlaces/venezuela.png" width="96" height="120"></a>
+                    </div>
+                </div>
+            </div>         
+        </div> 
+    </div>
+    <div class="container text-center"> 
+        <div class="menu">
+            <a href="/">Inicio</a>|
+            <a href="/institucion/mision">¿Qué es el SAIME?</a>|
+            <a href="/noticia">Noticias</a>|
+            <!--<a href="#">Proyectos</a>-->
+            <!--|-->
+            <!--<a href="#">Mapa del Sitio</a>
+            |
+            <a href="#">Preguntas Frecuentes</a>
+            -->
+            <a href="/oficina/fijas">Oficinas</a>|
+            <a href="/institucion/contacto">Contactanos</a>
+        </div>
+        <div class=" copymessage">
+            <span>Desarrollado por: Coordinación de Sistemas - © 2016 Todos los Derechos Reservados.</span><br>
+            <span>Servicio Administrativo de Identificación, Migración y Extranjería -Rif G-20008889-3</span><br>
+            <span>Ministerio del Poder Popular para Relaciones Interiores, Justicia y Paz</span><br>
+            <span>Avenida Baralt, Edificio 1000. Sede SAIME. Planta Baja, Caracas.</span><br>
+
+        </div>
+    </div><!-- end container -->
+</footer>            
+    </div>
+ </div>
+ <div id="Info" data-backdrop="static" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body respuesta">
+                <p>
+                    <i class="fa fa-warning font-red"></i>
+                    <span id="idle-timeout-counter"></span></p>
+                <p></p>
+            </div>
+            <div class="modal-footer text-center">
+                <button id="idle-timeout-dialog-keepalive" type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+$('#go-to-petro-payload').click(function(e) {
+          alert('El pago se ha ejecutado de forma correcta')
+     
+        });
+  </script>
+</html>
