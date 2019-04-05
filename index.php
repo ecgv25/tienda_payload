@@ -513,7 +513,7 @@ for (var attr in meta) {
     
     
     
-    //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB1UEtGbvfsK1RjSszbq6AqBXXaX.jpg?v=1551195425 1920w 640h" data-parent-fit="cover" style="background-position: center center; background-image: url(&quot;http:/saime/imagenes/page-header.jpg&quot;);">
+    //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB1UEtGbvfsK1RjSszbq6AqBXXaX.jpg?v=1551195425 1920w 640h" data-parent-fit="cover" style="background-position: center center; background-image: url(inicio_files/page-header.jpg);">
    
   <div class="hero__inner">
     <div class="page-width text-center">
@@ -615,7 +615,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-            $8.77
+      Bs. 9200.50
           
         
       </span>
@@ -627,7 +627,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-        $8.77
+      Bs. 9200.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -714,7 +714,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-            $6.82
+      Bs. 8300.20
           
         
       </span>
@@ -726,7 +726,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-        $6.82
+      Bs. 8300.20
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -813,7 +813,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-            $172.90
+      Bs. 7200.50
           
         
       </span>
@@ -825,7 +825,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-        $172.90
+      Bs. 7200.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -911,7 +911,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-            $3.68
+      Bs. 4200.50
           
         
       </span>
@@ -923,7 +923,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-        $3.68
+      Bs. 4200.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -1009,7 +1009,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-            $139.98
+      Bs. 1390.50
           
         
       </span>
@@ -1021,7 +1021,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-        $139.98
+      Bs. 1390.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -1074,7 +1074,7 @@ for (var attr in meta) {
 
   <div id="ProductCardImageWrapper-featured-collections-1159800651812" class="grid-view-item__image-wrapper product-card__image-wrapper js">
     <div style="padding-top:100.0%;">
-      <img id="ProductCardImage-featured-collections-1159800651812" class="grid-view-item__image lazyautosizes lazyloaded" src="imagenes/product-image-909635370_1024x1024@2x.jpg" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="EDIFIER G4 PRO Gaming Headphone Virtual 7.1 Surround Sound Magic Voice Function 17 million RGB Lights Retractable BoomMicophone" data-srcset="/var/www/html/saime/imagenes/product-image-909635370_1024x1024@2x.jpg">
+      <img id="ProductCardImage-featured-collections-1159800651812" class="grid-view-item__image lazyautosizes lazyloaded" src="inicio_files/product-image-909635370_300x300.jpg" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="EDIFIER G4 PRO Gaming Headphone Virtual 7.1 Surround Sound Magic Voice Function 17 million RGB Lights Retractable BoomMicophone" data-srcset="inicio_files/product-image-909635370_300x300.jpg">
     </div>
   </div>
 
@@ -1108,7 +1108,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-            $136.78
+      Bs. 1350.50
           
         
       </span>
@@ -1120,7 +1120,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-        $136.78
+      Bs. 1350.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -1167,7 +1167,7 @@ for (var attr in meta) {
     
     
     
-    //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf.jpg?v=1551196113 1920w 650h" data-parent-fit="contain" style="background-position: center center; background-image: url(&quot;http:/saime/imagenes/HTB155SudaLN8KJjSZFKq6z7NVXaf.jpg&quot;);">
+    //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf.jpg?v=1551196113 1920w 650h" data-parent-fit="contain" style="background-position: center center; background-image: url(inicio_files/HTB155SudaLN8KJjSZFKq6z7NVXaf.jpg);">
                 <div class="slideshow__overlay"></div>
               <picture style="display: none;"><source data-srcset="//cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_180x.jpg?v=1551196113 180w 61h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_360x.jpg?v=1551196113 360w 122h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_540x.jpg?v=1551196113 540w 183h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_720x.jpg?v=1551196113 720w 244h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_900x.jpg?v=1551196113 900w 305h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1080x.jpg?v=1551196113 1080w 366h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1296x.jpg?v=1551196113 1296w 439h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1512x.jpg?v=1551196113 1512w 512h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1728x.jpg?v=1551196113 1728w 585h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf.jpg?v=1551196113 1920w 650h" sizes="1918.0327868852462px" srcset="//cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_180x.jpg?v=1551196113 180w 61h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_360x.jpg?v=1551196113 360w 122h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_540x.jpg?v=1551196113 540w 183h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_720x.jpg?v=1551196113 720w 244h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_900x.jpg?v=1551196113 900w 305h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1080x.jpg?v=1551196113 1080w 366h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1296x.jpg?v=1551196113 1296w 439h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1512x.jpg?v=1551196113 1512w 512h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf_1728x.jpg?v=1551196113 1728w 585h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB155SudaLN8KJjSZFKq6z7NVXaf.jpg?v=1551196113 1920w 650h"><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="1918.0327868852462px"></picture></div>
             
@@ -1415,7 +1415,7 @@ for (var attr in meta) {
     
     
     
-    //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA.jpg?v=1551195452 1920w 640h" data-parent-fit="contain" style="background-position: center center; background-image: url(&quot;http:/saime/imagenes/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1728x.jpg&quot;);">
+    //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA.jpg?v=1551195452 1920w 640h" data-parent-fit="contain" style="background-position: center center; background-image: url(inicio_files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1728x.jpg);">
                 
               <picture style="display: none;"><source data-srcset="//cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_180x.jpg?v=1551195452 180w 60h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_360x.jpg?v=1551195452 360w 120h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_540x.jpg?v=1551195452 540w 180h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_720x.jpg?v=1551195452 720w 240h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_900x.jpg?v=1551195452 900w 300h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1080x.jpg?v=1551195452 1080w 360h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1296x.jpg?v=1551195452 1296w 432h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1512x.jpg?v=1551195452 1512w 504h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1728x.jpg?v=1551195452 1728w 576h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA.jpg?v=1551195452 1920w 640h" sizes="1521px" srcset="//cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_180x.jpg?v=1551195452 180w 60h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_360x.jpg?v=1551195452 360w 120h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_540x.jpg?v=1551195452 540w 180h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_720x.jpg?v=1551195452 720w 240h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_900x.jpg?v=1551195452 900w 300h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1080x.jpg?v=1551195452 1080w 360h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1296x.jpg?v=1551195452 1296w 432h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1512x.jpg?v=1551195452 1512w 504h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA_1728x.jpg?v=1551195452 1728w 576h, //cdn.shopify.com/s/files/1/0070/2522/9860/files/HTB14P8QbyLrK1Rjy1zdq6ynnpXaA.jpg?v=1551195452 1920w 640h"><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="1521px"></picture></div>
             

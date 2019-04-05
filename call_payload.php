@@ -4,19 +4,19 @@ $random = substr(md5(mt_rand()), 0, 7);
 
 
 /*  DATA */
-$data['clave_api'] = "be0bc4eb04bc11e981cd005056ac26d8";
+$data['clave_api'] = "063b94aebd84406b8f3cbb32ae575eba13fe043787fde489daee576a20dac84a9";
 $data['numero_factura_cliente'] = $random;
-$data['monto'] = 360;
-$data['url_callback'] = "http://pago.saime.gob.ve";
-$data['cedula'] = "V24203774";
-$data['email'] = "test@gmail.com";
-$data['petro_pago'] = "1";
+$data['monto'] = 8300.20;
+$data['url_callback'] = "www.google.com";
+$data['cedula'] = "V17704419";
+$data['email'] = "carolina.g.ve@gmail.com";
+$data['petro_pago'] = "0";
 $string['pago'] = $data;
 
 $data_string = json_encode($string);
 /*  DATA */
 
-$ch = curl_init("http://core.pasarela.devptr.gob.ve:8280/registrarPago");
+$ch = curl_init("http://core-pg.tinscorp.com:8280/registrarPago");
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
