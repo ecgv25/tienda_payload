@@ -2679,7 +2679,7 @@ article,
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 8300.20
+      USD 20.00
           
         
       </span>
@@ -2691,7 +2691,7 @@ article,
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 8300.20
+      USD 20.00
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>

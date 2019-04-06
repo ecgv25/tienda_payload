@@ -615,7 +615,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 9200.50
+      USD 9200.50
           
         
       </span>
@@ -627,7 +627,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 9200.50
+      USD 9200.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -714,7 +714,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 8300.20
+      USD 20.00
           
         
       </span>
@@ -726,7 +726,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 8300.20
+      USD 20.00
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -813,7 +813,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 7200.50
+      USD 7200.50
           
         
       </span>
@@ -825,7 +825,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 7200.50
+      USD 7200.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -911,7 +911,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 4200.50
+      USD 4200.50
           
         
       </span>
@@ -923,7 +923,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 4200.50
+      USD 4200.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -1009,7 +1009,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 1390.50
+      USD 1390.50
           
         
       </span>
@@ -1021,7 +1021,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 1390.50
+      USD 1390.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>
@@ -1108,7 +1108,7 @@ for (var attr in meta) {
       <span class="price-item price-item--regular" data-regular-price="">
         
           
-      Bs. 1350.50
+      USD 1350.50
           
         
       </span>
@@ -1120,7 +1120,7 @@ for (var attr in meta) {
     </dt>
     <dd>
       <span class="price-item price-item--sale" data-sale-price="">
-      Bs. 1350.50
+      USD 1350.50
       </span>
       <span class="price-item__label" aria-hidden="true">Oferta</span>
     </dd>

@@ -6,7 +6,7 @@ $random = substr(md5(mt_rand()), 0, 7);
 /*  DATA */
 $data['clave_api'] = "063b94aebd84406b8f3cbb32ae575eba13fe043787fde489daee576a20dac84a9";
 $data['numero_factura_cliente'] = $random;
-$data['monto'] = 8300.20;
+$data['monto'] = 20.00;
 $data['url_callback'] = "www.shop.tinscorp.com";
 $data['cedula'] = "V123456";
 $data['email'] = "iosev831201@gmail.com";
